@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const NavWrapper = styled.div`
   grid-column: 2 / span 12;
