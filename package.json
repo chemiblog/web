@@ -17,6 +17,7 @@
     "@mdx-js/react": "^2.1.5",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.24.7",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-mdx": "^4.3.0",
     "gatsby-plugin-sharp": "^4.24.0",
@@ -33,9 +34,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/chemiblog/web"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/chemiblog/web/issues"
   }
 }
