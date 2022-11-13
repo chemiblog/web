@@ -1,6 +1,6 @@
-const { default: styled } = require("styled-components")
+import styled from "styled-components"
 
-export const FooterWrapper = styled.div`
+export const FooterWrapper = styled.footer`
   grid-column: 2 / span 12;
   min-height: 11.25rem;
   padding: 3rem 0;
@@ -15,12 +15,14 @@ export const FooterWrapper = styled.div`
 
 export const FooterSocialWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  text-align: center;
 
   & p {
     text-align: center;
     flex: 0 0 100%;
+    /* color: "dark2"; */
   }
 `
 
@@ -28,14 +30,15 @@ export const FooterSocialIcons = styled.div`
   flex: 0 0 100%;
   margin-bottom: 2rem;
 
-  & img {
+  img {
     height: 22px;
     padding: 0 1rem;
-    transition: filter 0.3s ease;
+    transition: all 0.3s ease;
   }
 
-  & img:hover,
+  img:hover,
   img:focus {
     filter: brightness(50%);
+    transform: scale(1.2);
   }
 `

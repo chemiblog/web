@@ -4,9 +4,11 @@ import {
   FooterWrapper,
   FooterSocialWrapper,
   FooterSocialIcons,
+  P,
 } from "../elements"
 
 export const Footer = () => {
+
   const data = useStaticQuery(graphql`
     query {
       linkedin: file(relativePath: { eq: "linkedin.svg" }) {
@@ -33,37 +35,35 @@ export const Footer = () => {
         <FooterSocialIcons>
           <a
             href="https://linkedin.com"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <img src={data.linkedin.publicURL} alt="linkedin logo" />
           </a>
           <a
             href="https://twitter.com"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <img src={data.twitter.publicURL} alt="twitter logo" />
           </a>
           <a
             href="https://facebook.com"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <img src={data.facebook.publicURL} alt="facebook logo" />
           </a>
-          <a href="https://t.me" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me" rel="noopener noreferrer">
             <img src={data.telegram.publicURL} alt="telegram logo" />
           </a>
           <a
-            href="https://facebook.com"
-            target="_blank"
+            href="https://github.com"
             rel="noopener noreferrer"
           >
             <img src={data.github.publicURL} alt="github logo" />
           </a>
         </FooterSocialIcons>
-        <p>&copy; {new Date().getFullYear()} | All rights reserved</p>
+        <P size="xSmall" color="dark3">
+          &copy; {new Date().getFullYear()} | Powered by <a href="https://biodasturchi.uz">Biodasturchi</a>
+        </P>
       </FooterSocialWrapper>
     </FooterWrapper>
   )
